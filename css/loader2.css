@@ -1,0 +1,12 @@
+.loader {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 40px;
+    color: palevioletred;
+}
+
+.loader::after {
+    content: '\2026';
+    display: inline-block; /* Not sure why it has to be made as a inline-block and then vertical-align to bottom */
+    overflow: hidden;
+    vertical-align: bottom; /* the font push it to look like align to the middle. It's actually align to the bottom */
+}
