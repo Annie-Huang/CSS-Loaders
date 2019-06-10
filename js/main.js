@@ -7,8 +7,8 @@ function init() {
         loader.style.display = 'none';
 
         main.style.display = 'block';
-        main.style.opacity = 1;
-    }, 1000);
+        setTimeout(() => main.style.opacity = 1, 50);
+    }, 4000);
 }
 
 init();
