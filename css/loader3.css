@@ -11,6 +11,8 @@
     height: 16px;
     border-radius: 50%;
     margin: 0 8px;
+    transform: translate3d(0); /* this line does not do anything */
+    animation: bounce 0.6s infinite alternate; /* alternate will change direction, make it go forwards and backwards */
 }
 
 .loader > span:nth-child(2) {
@@ -19,4 +21,12 @@
 
 .loader > span:nth-child(3) {
 
+}
+
+@keyframes bounce {
+    to {
+        width: 16px;
+        height: 16px;
+        transform: translate3d(0, -16px, 0); /* translate3d(tx, ty, tz) */
+    }
 }
