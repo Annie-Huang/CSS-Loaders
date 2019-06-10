@@ -23,7 +23,7 @@ body {
     width: 90%;
     opacity: 0;
     display: none;
-    transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in; /* 1s is the fade in speed */
 }
 
 .main h1 {
