@@ -1,7 +1,13 @@
 .loader {
     height: 50px;
+    transform-origin: bottom center; /*start rotation point*/
+    animation: rotate 3s linear infinite;
 }
 
+/* Make the second one rotation against the first one.
+   And because the height of the loader is different from the height of the circle,
+   the first one is slightly rotation as well
+*/
 .circle {
     background-color: purple;
     height: 40px;
@@ -11,4 +17,10 @@
 
 .circle:nth-child(2) {
     background-color: palevioletred;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
 }
