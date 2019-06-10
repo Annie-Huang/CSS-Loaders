@@ -9,4 +9,14 @@
     display: inline-block; /* Not sure why it has to be made as a inline-block and then vertical-align to bottom */
     overflow: hidden;
     vertical-align: bottom; /* the font push it to look like align to the middle. It's actually align to the bottom */
+    animation: dots steps(4, end) 2s infinite; /* 4 steps jump to go to the end state */
+    width: 0;
+}
+
+@keyframes dots {
+    /* This is not always reliable, you need to carefully calculate each position (number of steps) what will make the dot appear */
+    /* You can put it as 45px as well */
+    to {
+        width: 1.25em;
+    }
 }
