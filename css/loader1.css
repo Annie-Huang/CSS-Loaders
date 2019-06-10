@@ -13,6 +13,8 @@
     height: 40px;
     width: 40px;
     border-radius: 50%;
+    transform: scale(0); /* Make it disappear*/
+    animation: grow 1.5s linear infinite;
 }
 
 .circle:nth-child(2) {
@@ -22,5 +24,11 @@
 @keyframes rotate {
     to {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes grow {
+    50% {
+        transform: scale(1); /* default scale is 1*/
     }
 }
